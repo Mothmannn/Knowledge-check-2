@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Knowledge Check: Bootstrap Basics, Utilities, Forms, and Components
+    </title>
+    <!-- Bootstrap CSS via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <section class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!--Registration Form-->
+    <section class="container text-center mt-5">
+      <h2 class="text-center text-primary">Registration Form</h2>
+      <form class="border p-4 shadow-sm bg-light novalidate .needs-validation">
+        <div class="row">
+          <div class="col-6 mb-3">
+            <label for="name" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+                id="name"
+                placeholder="Enter your first name"
+                required
+            />
+            </div>
+            <div class="col-6 mb-3">
+                <label for="name" class="form-label">Last Name</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your last name"
+                    required
+                />
+            </div>
+        </div>    
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <div class="input-group">
+            <span class="input-group-text">@</span>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+        <div class="mb-3">
+        <div class="form-check mb-3">
+          <input
+            type="checkbox"
+            id="terms"
+            required
+          />
+          <label class="form-check-label" for="terms">Accept Terms and Conditions</label>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Login</button>
+      </form>
+    </section>
+    <!--Table for Displaying Data-->
+    <section class="container mt-5">
+      <h2 class="text-center text-primary">Data Table</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+            <th scope="col">Favorite Candy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+            <td>Chocolate</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>jane.smith@example.com</td>
+            <td>Gummy Bears</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>3</td>
+            <td>Emily Johnson</td>
+            <td>emily.johnson@example.com</td>
+            <td>Swedish Fish</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
+    <!--Image and Button Utilities-->
+    <section class="container-fluid mt-5 text-center">
+      <h2 class="text-primary">Image and Button Utilities</h2>
+      <div class="img-fluid mb-3">
+        <img
+          src="https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true"
+          class="img-fluid rounded"
+          alt="Placeholder Image"
+        />
+        <img
+          src="https://th.bing.com/th/id/R.78a13c9eb31108addb76f77ada4589ff?rik=b%2fIodCIvyGbxCA&riu=http%3a%2f%2ffiles.all-free-download.com%2fdownloadfiles%2fwallpapers%2f1920_1080%2fpeaceful_lake_wallpaper_landscape_nature_1208.jpg&ehk=6EYMLnN48Cs4mGNjCqvvjwaPz6MF2KRLIUOhJG57Z8g%3d&risl=&pid=ImgRaw&r=0"
+          class="img-thumbnail rounded-circle"
+          alt="Placeholder Image"
+        />
+      </div>
+      <div class="mb-3">
+        <button type="button" class="btn btn-primary">Button</button>
+      </div>
+      <div class="mb-3">
+        <button type="button" class="btn btn-secondary d-none d-md-block mx-auto">Hidden Button</button>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
